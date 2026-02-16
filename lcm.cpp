@@ -1,18 +1,23 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int gcd(int a , int b){
-	if(b == 0){
+int gcd(int a, int b)
+{
+	if (b == 0)
+	{
 		return a;
-	}else{
-		return gcd(b, a%b);
+	}
+	else
+	{
+		return gcd(b, a % b);
 	}
 }
-int main() {
+int main()
+{
 	int a, b;
-	cin>>a>>b;
-	int hcf = gcd(a,b);
-	int lcm = (a*b)/hcf;
-	cout<<lcm;
+	cin >> a >> b;
+	int hcf = gcd(a, b);
+	int lcm = (a * b) / hcf;
+	cout << lcm;
 	return 0;
 }
