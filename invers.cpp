@@ -7,7 +7,7 @@ int main() {
 	int temp = num;
 	int count= 0;
 
-	while(temp != 0){		//counting total digits in num
+	while(temp != 0){		
 		count++;
 		temp /= 10;
     }
